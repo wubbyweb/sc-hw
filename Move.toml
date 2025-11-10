@@ -1,0 +1,24 @@
+[package]
+name = "hello_world"
+edition = "2024.beta" # edition = "legacy" to use legacy (pre-2024) Move
+# license, publisher and upgrade policy are optional.
+# license = "" # e.g., "MIT", "GPL", "Apache 2.0"
+# publisher = "" # e.g., "alice@sui.io"
+# upgrade_policy = "compatible"
+
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "framework/testnet" }
+
+# For remote import, use the `{ git = "...", subdir = "...", rev = "..." }`.
+# Revision can be a branch, a tag, and a commit hash.
+# MyRemotePackage = { git = "https://some.remote/host.git", subdir = "remote/path", rev = "main" }
+
+# For local dependencies use `local = path`. Path is relative to the package root.
+# Local = { local = "../path/to" }
+
+# [addresses]
+# Named addresses will be accessible in Move as `@name`. They're also exported:
+# for example, `std = "0x1"` is exported by the Standard Library.
+# alice = "0xA11CE"
+
+[sources]
