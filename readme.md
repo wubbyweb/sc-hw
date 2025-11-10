@@ -27,5 +27,15 @@ sui client call --package <PACKAGE_ID> --module hello_world --function mint --ga
 ```
 - Approximate gas fee for test call: 0.001 SUI
 
+## Running the Interactive UI
+1. Install Node.js and npm
+2. Install dependencies: `npm install`
+3. Start the server: `npm run dev`
+4. Open http://localhost:3000 in your browser
+5. Connect your Sui Wallet (install Sui Wallet extension if needed)
+6. Enter the deployed Package ID
+7. Click "Mint Hello World Object" to test the contract
+8. View the transaction on the embedded blockchain explorer
+
 ## License
 MIT
